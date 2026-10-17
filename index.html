@@ -162,10 +162,6 @@
   .edu-card .yr{ color:var(--muted); font-size:.8rem; margin-bottom:14px; }
   .edu-card .status{ display:inline-block; font-size:.7rem; background:var(--jade-dim); color:var(--ivory); padding:3px 10px; border-radius:20px; }
 
-  .thesis-note{ margin-top:32px; padding:26px 28px; background:var(--bg-panel); border:1px solid var(--line-col); border-right:3px solid var(--copper); border-radius:6px; }
-  .thesis-note .t-label{ font-size:.72rem; color:var(--copper-bright); font-weight:700; letter-spacing:.03em; margin-bottom:10px; display:block; }
-  .thesis-note p{ color:var(--ivory-dim); font-size:.95rem; line-height:2; }
-
   .cert-list{ margin-top:20px; }
   .cert-row{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; padding:15px 0; border-bottom:1px solid var(--line-col); font-size:.92rem; }
   .cert-row:first-child{ border-top:1px solid var(--line-col); }
@@ -238,7 +234,6 @@
 
   .btn-icon{ display:inline-flex; align-items:center; gap:9px; }
   
-  /* استایل‌های اختصاصی برای بخش مقالات */
   .paper-list { margin-top: 16px; border-top: 1px solid var(--line-col); padding-top: 16px; }
   .paper-title { font-family: var(--sans); font-size: 0.85rem; color: var(--ivory-dim); line-height: 1.8; margin-bottom: 16px; padding-right: 20px; position: relative; }
   .paper-title::before { content: "•"; position: absolute; right: 0; color: var(--copper); font-size: 1.2rem; }
@@ -267,16 +262,17 @@
         داور مجلات علمی · نوازنده‌ی تنبور
       </p>
       <p class="hero-desc reveal in d2">
-        نزدیک به شش سال است در دنیایی زندگی می‌کنم که به دقت، عدد و قانون نیاز دارد؛
-         در کنارش، با سیم‌های تنبور دنیایی دیگر را می‌نوازم که به احساس نیاز دارد.
-        این صفحه، مسیر همین دو دنیاست.
+        طی نزدیک به شش سال، فعالیت حرفه‌ای من در چارچوبی نظام‌مند و مبتنی بر دقت، تحلیل داده‌ها و پایبندی به قوانین تداوم یافته است. 
+        در موازات این رویکرد عقلانی، نوازندگی تنبور بستری برای پیوند با بُعد احساسی و هنری فراهم آورده است. 
+        این صفحه، ترسیم‌گر تلاقی این دو حوزه‌ی متمایز در مسیر حرفه‌ای من است.
       </p>
     </div>
     <div class="portrait-wrap reveal in d2">
       <div class="portrait-ring"></div>
       <div class="portrait-ring2"></div>
       <div class="portrait">
-        <img src="assets/profile.png" alt="محمد امین چشمه سفیدی">
+        <!-- نام دقیق عکس پروفایل شما -->
+        <img src="profile.png" alt="محمد امین چشمه سفیدی">
       </div>
     </div>
   </div>
@@ -346,7 +342,7 @@
         <div class="tl-org">بیمه دی <b>·</b> ایران، کرمانشاه</div>
         <p class="tl-desc">
           ارزیابی خسارت بیمه‌های درمان تکمیلی به‌عنوان Medical Claims Assessor Expert،
-          و پیش از آن مسئولیت ثبت مدارک پزشکی (Medical Records Specialist) در همین مجموعه.
+          و پیش از آن مسئولیت مدارک پزشکی (Medical Records Specialist) در همین مجموعه.
         </p>
       </div>
 
@@ -402,7 +398,6 @@
   </div>
 </section>
 
-<!-- بخش داوری و فعالیت‌های پژوهشی -->
 <section id="reviewing">
   <div class="wrap">
     <div class="reveal">
@@ -411,7 +406,6 @@
     </div>
 
     <div class="cards-2">
-      <!-- کارت پژوهش‌ها و مقالات (تمام عرض) -->
       <div class="edu-card reveal" style="grid-column: 1 / -1; margin-top: 30px;">
         <div class="edu-icon">
           <svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px;">
@@ -423,23 +417,19 @@
         <h3 style="margin-top:14px;">فعالیت‌های پژوهشی و تألیف</h3>
         
         <div class="paper-list">
-          <!-- پایان‌نامه -->
           <div class="paper-title">
             <span style="color:var(--copper-bright); font-weight:600; display:block; margin-bottom:4px;">پایان‌نامه کارشناسی ارشد (تحت حمایت پژوهشکده بیمه):</span>
             Developing a Digital Marketing Model for Businesses in the Insurance Industry
           </div>
-          <!-- مقاله ۱ -->
           <div class="paper-title" dir="ltr">
             Category-Specific Prediction of E-Commerce Purchase-Popularity Tiers: An Ordinal Classification Approach with a Precision-Weighted Partial Pooling Benchmark
           </div>
-          <!-- مقاله ۲ -->
           <div class="paper-title" dir="ltr">
             Beyond Cross-Validation: Untouched-Holdout Evidence on Model Generalization in Small-Sample E-Commerce Popularity-Index Estimation
           </div>
         </div>
       </div>
 
-      <!-- کارت داوری مقالات -->
       <div class="edu-card reveal d1">
         <div class="edu-icon">
           <svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px;">
@@ -459,7 +449,6 @@
         <span class="tl-tag" style="margin-top:16px;">داور علمی</span>
       </div>
 
-      <!-- کارت دوره الزیویر -->
       <div class="edu-card reveal d2">
         <div class="edu-icon">
           <svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px;">
@@ -569,20 +558,22 @@
 </div>
 
 <script>
+  // نام دقیق فایل‌های شما در گیت‌هاب (بدون پوشه assets)
   const certImages = {
-    cert1: "assets/cert1.jpg",
-    cert2: "assets/cert2.jpg",
-    cert3: "assets/cert3.jpg",
-    cert4: "assets/cert4.jpg",
-    cert5: "assets/cert5.jpg",
-    cert6: "assets/cert6.jpg"
+    cert1: "cert1.jfif",
+    cert2: "cert2.jfif",
+    cert3: "cert3.jfif",
+    cert4: "cert4.jfif",
+    cert5: "cert5.jfif",
+    cert6: "cert6.jpg"
   };
   
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
   
   function openLightbox(key){
-    lightboxImg.src = certImages[key];
+    // لود کردن عکس دقیقا با همان نام و پسوندی که در گیت‌هاب دارید
+    lightboxImg.src = certImages[key]; 
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   }

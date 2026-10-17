@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محمد امین چشمه سفیدی — کارشناس بیمه و درمان | داور علمی | نوازنده تنبور</title>
+<meta name="description" content="رزومه‌ی محمد امین چشمه سفیدی — کارشناس مسئول اجرائی در بیمه دی، پژوهشگر، داور مجلات علمی و نوازنده تنبور">
+<meta property="og:title" content="محمد امین چشمه سفیدی — کارشناس بیمه و درمان | داور علمی | نوازنده تنبور">
+<meta property="og:description" content="کارشناس مسئول اجرائی در بیمه دی، پژوهشگر، داور مجلات علمی و نوازنده‌ی تنبور — کرمانشاه، ایران">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23211610'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='%23E0AC6C' font-family='Georgia,serif'%3Eم%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-deep:#211610;
+    --bg-panel:#2C1F17;
+    --bg-panel-2:#33251b;
+    --ivory:#F2E8D6;
+    --ivory-dim:#C9B99E;
+    --muted:#9C8B72;
+    --jade:#5B8267;
+    --jade-dim:#3C5847;
+    --copper:#C58C4C;
+    --copper-bright:#E0AC6C;
+    --rust:#A24A34;
+    --line-col: rgba(197,140,76,0.25);
+    --serif:'Noto Naskh Arabic', serif;
+    --sans:'Vazirmatn', sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg-deep);
+    color:var(--ivory);
+    font-family:var(--sans);
+    overflow-x:hidden;
+    position:relative;
+  }
+  ::selection{ background:var(--copper); color:#211610; }
+
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    background-image:
+      radial-gradient(circle at 85% 8%, rgba(197,140,76,0.10) 0, transparent 45%),
+      radial-gradient(circle at 8% 92%, rgba(91,130,103,0.12) 0, transparent 45%);
+    pointer-events:none;
+    z-index:0;
+  }
+  .grain{
+    position:fixed; inset:0; z-index:1; pointer-events:none; opacity:.05; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  section, header.hero{ position:relative; z-index:2; }
+
+  .string-rail{
+    position:fixed;
+    top:0; bottom:0; left:22px;
+    width:40px;
+    z-index:50;
+    display:flex; align-items:center; justify-content:center;
+    pointer-events:none;
+  }
+  .string-rail svg{ overflow:visible; }
+  .string-path{ fill:none; stroke:rgba(197,140,76,0.28); stroke-width:1.4; }
+  .string-progress{ fill:none; stroke:var(--copper-bright); stroke-width:1.6; filter: drop-shadow(0 0 4px rgba(224,172,108,.5)); }
+  .string-bead{ fill:var(--copper-bright); filter: drop-shadow(0 0 6px rgba(224,172,108,.8)); }
+  .rail-dot{ position:absolute; left:14px; width:15px; height:15px; transform:translateX(50%); pointer-events:auto; cursor:pointer; }
+  .rail-dot span{ display:block; width:8px; height:8px; margin:3.5px auto; border-radius:50%; background:var(--muted); transition:all .35s ease; border:1px solid rgba(242,232,214,0.15); }
+  .rail-dot.active span{ background:var(--copper-bright); width:11px; height:11px; margin:2px auto; box-shadow:0 0 10px rgba(224,172,108,.7);}
+  .rail-dot label{
+    position:absolute; right:22px; top:50%; transform:translateY(-50%);
+    font-size:.68rem; color:var(--ivory-dim); white-space:nowrap;
+    opacity:0; transition:opacity .25s ease; letter-spacing:.02em;
+    background:rgba(33,22,16,.85); padding:3px 9px; border-radius:3px; border:1px solid var(--line-col);
+  }
+  .rail-dot:hover label, .rail-dot.active label{ opacity:1; }
+  @media (max-width:780px){ .string-rail{ left:8px; width:22px; } .rail-dot{ left:6px; } .rail-dot label{ display:none; } }
+
+  .wrap{ max-width:1040px; margin:0 auto; padding:0 8vw; }
+  @media (max-width:780px){ .wrap{ padding:0 7vw; } }
+
+  .eyebrow{ display:inline-flex; align-items:center; gap:10px; font-size:.82rem; color:var(--copper-bright); font-weight:600; margin-bottom:18px; }
+  .eyebrow::before{ content:""; width:26px; height:1px; background:var(--copper-bright); display:inline-block; }
+  h2.title{ font-family:var(--serif); font-weight:700; font-size:clamp(1.9rem, 4vw, 3.1rem); color:var(--ivory); line-height:1.35; margin-bottom:.6em; }
+  p.lead{ color:var(--ivory-dim); font-size:1.05rem; line-height:2.05; max-width:680px; }
+
+  section{ padding:min(14vh,120px) 0; border-top:1px solid rgba(197,140,76,0.09); }
+
+  .reveal{ opacity:0; transform:translateY(28px); transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+  .reveal.d1{ transition-delay:.08s; } .reveal.d2{ transition-delay:.16s; } .reveal.d3{ transition-delay:.24s; } .reveal.d4{ transition-delay:.32s; }
+
+  header.hero{ min-height:100svh; display:flex; align-items:center; padding-top:8vh; padding-bottom:6vh; }
+  .hero-grid{ display:grid; grid-template-columns:1.25fr .9fr; gap:6vw; align-items:center; width:100%; }
+  @media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; gap:8vw; } }
+
+  .hero-eyebrow{ font-family:var(--sans); font-size:.85rem; color:var(--jade); font-weight:600; letter-spacing:.02em; margin-bottom:22px; display:flex; align-items:center; gap:10px; }
+  .hero-eyebrow::before{ content:"﴾"; color:var(--copper-bright); font-size:1.1rem; }
+
+  h1.name{ font-family:var(--serif); font-weight:700; color:var(--ivory); font-size:clamp(2.6rem, 6.4vw, 5rem); line-height:1.18; margin-bottom:.28em; }
+  h1.name em{ font-style:normal; color:var(--copper-bright); }
+
+  .hero-role{ font-size:clamp(1.05rem,1.7vw,1.3rem); color:var(--ivory-dim); margin-bottom:26px; line-height:1.9; }
+  .hero-role strong{ color:var(--jade); font-weight:600; }
+
+  .hero-desc{ color:var(--muted); font-size:1rem; line-height:2; max-width:520px; margin-bottom:38px; }
+
+  .hero-cta{ display:flex; flex-wrap:wrap; gap:14px; }
+  .btn{ font-family:var(--sans); font-weight:600; font-size:.92rem; padding:14px 26px; border-radius:3px; cursor:pointer; border:1px solid transparent; transition:all .3s ease; display:inline-flex; align-items:center; gap:8px; text-decoration:none; }
+  .btn-primary{ background:var(--copper); color:#211610; }
+  .btn-primary:hover{ background:var(--copper-bright); transform:translateY(-2px); box-shadow:0 8px 20px rgba(197,140,76,.25);}
+  .btn-ghost{ border-color:rgba(242,232,214,.25); color:var(--ivory); }
+  .btn-ghost:hover{ border-color:var(--jade); color:var(--jade); }
+
+  .portrait-wrap{ position:relative; display:flex; justify-content:center; }
+  .portrait-ring{ position:absolute; inset:0; margin:auto; width:112%; height:112%; border:1px solid var(--line-col); border-radius:50%; animation: spin 60s linear infinite; }
+  .portrait-ring2{ position:absolute; inset:0; margin:auto; width:128%; height:128%; border:1px dashed rgba(91,130,103,0.35); border-radius:50%; animation: spin 90s linear infinite reverse; }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+  .portrait{ position:relative; width:min(320px,74vw); aspect-ratio:1/1; border-radius:50%; overflow:hidden; border:3px solid var(--bg-panel-2); box-shadow:0 30px 60px -20px rgba(0,0,0,.6), 0 0 0 1px var(--line-col); }
+  .portrait img{ width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.02) contrast(1.03); }
+  .portrait::after{ content:""; position:absolute; inset:0; border-radius:50%; background:linear-gradient(155deg, rgba(91,130,103,.22), transparent 40%, rgba(33,22,16,.35)); }
+
+  .scrolldown{ position:absolute; bottom:26px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:10px; color:var(--muted); font-size:.72rem; letter-spacing:.05em; }
+  .scrolldown .wire{ width:1px; height:46px; background:linear-gradient(var(--copper-bright), transparent); position:relative; overflow:hidden;}
+  .scrolldown .pluck{ position:absolute; left:-2.5px; width:6px; height:6px; border-radius:50%; background:var(--copper-bright); top:-10px; animation:pluck 2.2s ease-in-out infinite; box-shadow:0 0 6px rgba(224,172,108,.8);}
+  @keyframes pluck{ 0%{top:-10px;} 60%{top:44px;} 100%{top:44px; opacity:0;} }
+
+  .about-grid{ display:grid; grid-template-columns:.9fr 1.5fr; gap:6vw; align-items:start; }
+  @media (max-width:820px){ .about-grid{ grid-template-columns:1fr; gap:30px; } }
+  .facts{ display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line-col); }
+  .fact{ display:flex; justify-content:space-between; padding:14px 0; border-bottom:1px solid var(--line-col); font-size:.92rem; }
+  .fact span:first-child{ color:var(--muted); }
+  .fact span:last-child{ color:var(--ivory); font-weight:600; text-align:left; }
+  .about-quote{ font-family:var(--serif); font-size:clamp(1.3rem,2.4vw,1.7rem); color:var(--jade); line-height:1.9; margin-top:30px; position:relative; padding-right:26px; border-right:2px solid var(--jade-dim); }
+
+  .timeline{ position:relative; margin-top:50px; }
+  .timeline::before{ content:""; position:absolute; top:0; bottom:0; right:9px; width:1px; background:linear-gradient(var(--line-col), var(--line-col) 90%, transparent); }
+  @media (max-width:640px){ .timeline::before{ right:5px; } }
+  .tl-item{ position:relative; padding-right:46px; padding-bottom:56px; }
+  .tl-item:last-child{ padding-bottom:6px; }
+  .tl-dot{ position:absolute; right:0; top:6px; width:19px; height:19px; border-radius:50%; background:var(--bg-deep); border:2px solid var(--copper); display:flex; align-items:center; justify-content:center; }
+  .tl-dot::after{ content:""; width:6px; height:6px; border-radius:50%; background:var(--copper-bright); }
+  .tl-item.current .tl-dot{ border-color:var(--jade); }
+  .tl-item.current .tl-dot::after{ background:var(--jade); box-shadow:0 0 8px rgba(91,130,103,.9); }
+  .tl-period{ font-size:.78rem; color:var(--copper-bright); font-weight:600; margin-bottom:8px; display:block; }
+  .tl-item.current .tl-period{ color:var(--jade); }
+  .tl-role{ font-family:var(--serif); font-size:1.35rem; color:var(--ivory); margin-bottom:4px; font-weight:700; }
+  .tl-org{ font-size:.92rem; color:var(--ivory-dim); margin-bottom:10px; }
+  .tl-org b{ color:var(--muted); font-weight:400; }
+  .tl-desc{ font-size:.92rem; color:var(--muted); line-height:1.9; max-width:600px; }
+  .tl-tag{ display:inline-block; font-size:.72rem; color:var(--jade); border:1px solid var(--jade-dim); padding:3px 10px; border-radius:20px; margin-top:10px; }
+
+  .cards-2{ display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:46px; }
+  @media (max-width:780px){ .cards-2{ grid-template-columns:1fr; } }
+  .edu-card{ background:var(--bg-panel); border:1px solid var(--line-col); border-radius:6px; padding:28px 26px; }
+  .edu-card h3{ font-family:var(--serif); color:var(--ivory); font-size:1.2rem; margin-bottom:6px; }
+  .edu-card .org{ color:var(--jade); font-size:.85rem; margin-bottom:4px; }
+  .edu-card .yr{ color:var(--muted); font-size:.8rem; margin-bottom:14px; }
+  .edu-card .status{ display:inline-block; font-size:.7rem; background:var(--jade-dim); color:var(--ivory); padding:3px 10px; border-radius:20px; }
+
+  .thesis-note{ margin-top:32px; padding:26px 28px; background:var(--bg-panel); border:1px solid var(--line-col); border-right:3px solid var(--copper); border-radius:6px; }
+  .thesis-note .t-label{ font-size:.72rem; color:var(--copper-bright); font-weight:700; letter-spacing:.03em; margin-bottom:10px; display:block; }
+  .thesis-note p{ color:var(--ivory-dim); font-size:.95rem; line-height:2; }
+
+  .cert-list{ margin-top:20px; }
+  .cert-row{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; padding:15px 0; border-bottom:1px solid var(--line-col); font-size:.92rem; }
+  .cert-row:first-child{ border-top:1px solid var(--line-col); }
+  .cert-row .c-name{ color:var(--ivory); }
+  .cert-row .c-org{ color:var(--muted); font-size:.8rem; }
+  .cert-row .c-year{ color:var(--copper-bright); font-size:.78rem; white-space:nowrap; }
+  .cert-row.has-img{ cursor:pointer; transition:background .25s ease; -webkit-tap-highlight-color:transparent; touch-action:manipulation; }
+  .cert-row.has-img:active{ background:rgba(197,140,76,0.1); }
+  .cert-row.has-img:hover{ background:rgba(203,162,60,0.06); }
+  .cert-row.has-img:hover .c-name{ color:var(--copper-bright); }
+  .view-hint{ font-size:.72rem; color:var(--jade); margin-right:8px; opacity:.85; }
+
+  .lightbox{ position:fixed; inset:0; z-index:200; background:rgba(9,18,15,.92); display:none; align-items:center; justify-content:center; padding:5vh 5vw; backdrop-filter:blur(3px); }
+  .lightbox.open{ display:flex; }
+  .lightbox img{ max-width:min(600px,90vw); max-height:88vh; border-radius:6px; box-shadow:0 30px 70px rgba(0,0,0,.6); border:1px solid var(--line-col); }
+  .lightbox-close{ position:absolute; top:24px; left:24px; width:46px; height:46px; border-radius:50%; background:var(--bg-panel); border:1px solid var(--line-col); color:var(--ivory); font-size:1.3rem; cursor:pointer; display:flex; align-items:center; justify-content:center; -webkit-tap-highlight-color:transparent; touch-action:manipulation; }
+  .lightbox-close:hover{ color:var(--copper-bright); border-color:var(--copper); }
+
+  .skill-cols{ display:grid; grid-template-columns:1.1fr .9fr; gap:6vw; margin-top:50px; }
+  @media (max-width:820px){ .skill-cols{ grid-template-columns:1fr; gap:40px; } }
+  .skill-bar-row{ margin-bottom:24px; }
+  .skill-bar-row .sb-top{ display:flex; justify-content:space-between; font-size:.88rem; margin-bottom:9px; color:var(--ivory-dim); }
+  .sb-track{ height:6px; background:var(--bg-panel-2); border-radius:4px; overflow:hidden; }
+  .sb-fill{ height:100%; background:linear-gradient(90deg, var(--jade-dim), var(--jade)); border-radius:4px; width:0%; transition:width 1.4s cubic-bezier(.2,.8,.2,1); }
+
+  .tagcloud{ display:flex; flex-wrap:wrap; gap:10px; margin-top:6px; }
+  .tag{ font-size:.85rem; color:var(--ivory-dim); border:1px solid var(--line-col); padding:8px 16px; border-radius:20px; background:var(--bg-panel); }
+  .tag.hi{ border-color:var(--copper); color:var(--copper-bright); }
+
+  .lang-row{ display:flex; align-items:center; gap:16px; margin-bottom:18px; }
+  .lang-row .lname{ width:78px; font-size:.9rem; color:var(--ivory); flex-shrink:0; }
+  .lang-row .sb-track{ flex:1; }
+  .lang-row .llabel{ width:96px; font-size:.76rem; color:var(--muted); text-align:left; flex-shrink:0; }
+
+  .contact-section{ text-align:center; padding-bottom:14vh; }
+  .contact-section h2.title{ margin-bottom:.3em; }
+  .contact-section p.lead{ margin:0 auto 46px; }
+  .contact-email{ font-family:var(--serif); font-size:clamp(1.5rem,4.4vw,2.6rem); color:var(--copper-bright); text-decoration:none; display:inline-block; border-bottom:1px solid var(--copper-dim, rgba(197,140,76,.4)); padding-bottom:8px; transition:all .3s ease; }
+  .contact-email:hover{ color:var(--ivory); border-color:var(--ivory); }
+  .contact-links{ display:flex; justify-content:center; gap:16px; margin-top:40px; flex-wrap:wrap; }
+  footer{ text-align:center; padding:36px 6vw 46px; color:var(--muted); font-size:.78rem; border-top:1px solid var(--line-col); position:relative; z-index:2; }
+  footer .tanbur-mark{ color:var(--jade); margin-bottom:6px; font-size:1.1rem; }
+
+  .num-eyebrow{ font-family:var(--sans); color:var(--copper-bright); font-size:.8rem; font-weight:700; letter-spacing:.05em; }
+
+  .hero-blob{ position:absolute; border-radius:50%; filter:blur(70px); pointer-events:none; z-index:0; opacity:.35; animation:blobfloat 16s ease-in-out infinite; }
+  .hero-blob.b1{ width:420px; height:420px; background:radial-gradient(circle, rgba(197,140,76,.55), transparent 70%); top:-8%; left:-6%; }
+  .hero-blob.b2{ width:360px; height:360px; background:radial-gradient(circle, rgba(91,130,103,.55), transparent 70%); bottom:-12%; right:-4%; animation-delay:-8s; }
+  @keyframes blobfloat{ 0%,100%{ transform:translate(0,0); } 50%{ transform:translate(24px,-18px); } }
+  header.hero{ overflow:hidden; }
+
+  .icon{ width:1em; height:1em; display:inline-block; vertical-align:-0.14em; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+  .btn .icon{ width:1.05em; height:1.05em; }
+  .tl-dot .icon, .edu-icon .icon{ width:11px; height:11px; stroke:var(--bg-deep); fill:var(--bg-deep); }
+  .cert-icon{ width:15px; height:15px; margin-left:6px; stroke:var(--jade); vertical-align:-2px; }
+
+  .stats-strip{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:52px; }
+  @media (max-width:820px){ .stats-strip{ grid-template-columns:repeat(2,1fr); } }
+  .stat-card{ background:var(--bg-panel); border:1px solid var(--line-col); border-radius:8px; padding:22px 18px; text-align:center; transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
+  .stat-card:hover{ transform:translateY(-5px); border-color:var(--copper); box-shadow:0 16px 34px -14px rgba(0,0,0,.55); }
+  .stat-num{ font-family:var(--serif); font-size:clamp(1.8rem,3vw,2.4rem); color:var(--copper-bright); font-weight:700; line-height:1; }
+  .stat-label{ font-size:.78rem; color:var(--muted); margin-top:10px; line-height:1.7; }
+
+  .edu-card{ transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
+  .edu-card:hover{ transform:translateY(-5px); border-color:var(--copper); box-shadow:0 18px 36px -16px rgba(0,0,0,.55); }
+  .edu-icon{ width:38px; height:38px; border-radius:50%; background:var(--copper); display:flex; align-items:center; justify-content:center; margin-bottom:14px; }
+
+  .about-quote{ position:relative; }
+  .about-quote .qmark{ position:absolute; right:-6px; top:-30px; font-family:var(--serif); font-size:3.4rem; color:var(--copper); opacity:.35; line-height:1; user-select:none; }
+
+  .btn-icon{ display:inline-flex; align-items:center; gap:9px; }
+  
+  /* استایل‌های اختصاصی برای بخش مقالات */
+  .paper-list { margin-top: 16px; border-top: 1px solid var(--line-col); padding-top: 16px; }
+  .paper-title { font-family: var(--sans); font-size: 0.85rem; color: var(--ivory-dim); line-height: 1.8; margin-bottom: 16px; padding-right: 20px; position: relative; }
+  .paper-title::before { content: "•"; position: absolute; right: 0; color: var(--copper); font-size: 1.2rem; }
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<nav class="string-rail" aria-hidden="true">
+  <svg width="2" height="100%" style="position:absolute; height:100%;">
+    <line class="string-path" x1="1" y1="0" x2="1" y2="100%"></line>
+    <line class="string-progress" id="stringProgress" x1="1" y1="0" x2="1" y2="0"></line>
+  </svg>
+  <div id="railDots"></div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="hero-blob b1"></div>
+  <div class="hero-blob b2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-eyebrow reveal in">پرونده‌ی حرفه‌ای — کرمانشاه، ایران</div>
+      <h1 class="name reveal in">محمد امین <em>چشمه‌سفیدی</em></h1>
+      <p class="hero-role reveal in d1">
+        <strong>کارشناس مسئول اجرائی</strong> در بیمه دی ·
+        داور مجلات علمی · نوازنده‌ی تنبور
+      </p>
+      <p class="hero-desc reveal in d2">
+        نزدیک به شش سال است در دنیایی زندگی می‌کنم که به دقت، عدد و قانون نیاز دارد؛
+         در کنارش، با سیم‌های تنبور دنیایی دیگر را می‌نوازم که به احساس نیاز دارد.
+        این صفحه، مسیر همین دو دنیاست.
+      </p>
+    </div>
+    <div class="portrait-wrap reveal in d2">
+      <div class="portrait-ring"></div>
+      <div class="portrait-ring2"></div>
+      <div class="portrait">
+        <img src="assets/profile.png" alt="محمد امین چشمه سفیدی">
+      </div>
+    </div>
+  </div>
+  <div class="scrolldown">
+    <div class="wire"><div class="pluck"></div></div>
+    <span>پیمایش کنید</span>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="eyebrow">درباره من</div>
+      <div class="facts">
+        <div class="fact"><span>محل سکونت</span><span>کرمانشاه، ایران</span></div>
+        <div class="fact"><span>سابقه‌ی کاری</span><span>۵٫۵ سال</span></div>
+        <div class="fact"><span>حوزه‌ی فعالیت</span><span>صنعت بیمه</span></div>
+        <div class="fact"><span>ایمیل</span><span dir="ltr">amincheshmesfidi@gmail.com</span></div>
+        <div class="fact"><span>تلفن</span><span dir="ltr">0922 626 7638</span></div>
+      </div>
+      <div class="stats-strip">
+        <div class="stat-card"><div class="stat-num">۵٫۵</div><div class="stat-label">سال سابقه‌ی کاری</div></div>
+        <div class="stat-card"><div class="stat-num">۱۰+</div><div class="stat-label">دوره و گواهینامه</div></div>
+        <div class="stat-card"><div class="stat-num">۲</div><div class="stat-label">داوری مقاله علمی</div></div>
+        <div class="stat-card"><div class="stat-num">۲</div><div class="stat-label">تخصص موازی</div></div>
+      </div>
+    </div>
+    <div class="reveal d1">
+      <p class="lead">
+        فارغ‌التحصیل کارشناسی ارشد مدیریت بازرگانی گرایش تجارت الکترونیک و دانش آموخته مهندسی صنایع در مقطع کارشناسی. مسیر کاری‌ام را در
+        حوزه‌ی ارزیابی خسارت بیمه‌ی درمان آغاز کردم و امروز به‌عنوان کارشناس مسئول اجرائی
+        در بیمه دی، مسئولیت پروژه‌ی ارزیابی خسارت درمان در استان را بر عهده دارم.
+      </p>
+      <p class="about-quote" style="margin-top:22px;">
+        <span class="qmark">”</span>
+        نوازنده‌ی تنبوری که صبر و استقامت را از کوهنوردی، و آرامش را از شنا کردن به‌دست می‌آورد؛
+        کمی هم برنامه‌نویسی می‌داند تا ایده‌هایش را پیاده کند؛
+        همیشه تشنه‌ی یادگیری و کاوش در پژوهش‌های علمی است؛
+        و عاشق تعامل با انسان‌هاست.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">تجربه‌ی کاری</div>
+      <h2 class="title">مسیری که تا اینجا آمده‌ام</h2>
+      <p class="lead">پنج سال و نیم فعالیت پیوسته در حوزه‌ی بیمه‌ی درمان — از ثبت مدارک پزشکی تا مسئولیت اجرائی پروژه‌های ارزیابی خسارت.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item current reveal">
+        <div class="tl-dot"></div>
+        <span class="tl-period">خرداد ۱۴۰۴ — اکنون (۱ سال و ۲ ماه)</span>
+        <div class="tl-role">کارشناس مسئول اجرائی</div>
+        <div class="tl-org">بیمه دی <b>·</b> ایران، کرمانشاه</div>
+        <p class="tl-desc">مسئولیت اجرایی پروژه‌ی ارزیابی خسارت درمان و نظارت بر روند رسیدگی به پرونده‌های بیمه‌ی تکمیلی درمان.</p>
+        <span class="tl-tag">نقش فعلی</span>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <span class="tl-period">شهریور ۱۴۰۱ — خرداد ۱۴۰۴ (۳ سال و ۱۱ ماه)</span>
+        <div class="tl-role">کارشناس درمان</div>
+        <div class="tl-org">بیمه دی <b>·</b> ایران، کرمانشاه</div>
+        <p class="tl-desc">
+          ارزیابی خسارت بیمه‌های درمان تکمیلی به‌عنوان Medical Claims Assessor Expert،
+          و پیش از آن مسئولیت ثبت مدارک پزشکی (Medical Records Specialist) در همین مجموعه.
+        </p>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <span class="tl-period">بهمن ۱۳۹۹ — مرداد ۱۴۰۱ (۱ سال و ۶ ماه)</span>
+        <div class="tl-role">کارشناس درمان</div>
+        <div class="tl-org">گروه شرکت‌های ایرانیان پوشش <b>·</b> ایران، کرمانشاه</div>
+        <p class="tl-desc">آغاز مسیر حرفه‌ای در حوزه‌ی ارزیابی خسارت بیمه‌ی درمان.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">تحصیلات</div>
+      <h2 class="title">دانشگاه آزاد اسلامی کرمانشاه</h2>
+    </div>
+    <div class="cards-2">
+      <div class="edu-card reveal">
+        <div class="edu-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg></div>
+        <span class="status">فارغ‌التحصیل</span>
+        <h3 style="margin-top:14px;">کارشناسی ارشد مدیریت بازرگانی <br>(گرایش تجارت الکترونیک)</h3>
+        <div class="org">دانشگاه آزاد اسلامی کرمانشاه <b style="color:var(--muted); font-weight:400;">· ۱۴۰۲</b></div>
+      </div>
+      <div class="edu-card reveal d1">
+        <div class="edu-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg></div>
+        <span class="status" style="background:var(--bg-panel-2); color:var(--copper-bright); border:1px solid var(--line-col);">فارغ‌التحصیل</span>
+        <h3 style="margin-top:14px;">کارشناسی مهندسی صنایع</h3>
+        <div class="org">دانشگاه آزاد اسلامی کرمانشاه <b style="color:var(--muted); font-weight:400;">· ۱۳۹۹ تا ۱۴۰۲</b></div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:90px;">
+      <div class="eyebrow">دوره‌ها و گواهینامه‌ها</div>
+      <h2 class="title" style="font-size:clamp(1.6rem,3vw,2.2rem);">یادگیری پیوسته</h2>
+    </div>
+    <div class="cert-list reveal d1">
+      <div class="cert-row has-img" data-cert="cert6"><div><div class="c-name">داوری مقاله (Information Processing and Management) <span class="view-hint">مشاهده مدرک ›</span></div><div class="c-org">Elsevier</div></div><div class="c-year">۱۴۰۴</div></div>
+      <div class="cert-row has-img" data-cert="cert5"><div><div class="c-name">دوره‌ی داوری مجلات علمی (Peer Review) <span class="view-hint">مشاهده مدرک ›</span></div><div class="c-org">Elsevier</div></div><div class="c-year">۱۴۰۴</div></div>
+      <div class="cert-row has-img" data-cert="cert3"><div><div class="c-name">رهبری مدیریت <span class="view-hint">مشاهده مدرک ›</span></div><div class="c-org">Saylor Academy</div></div><div class="c-year">۱۴۰۴</div></div>
+      <div class="cert-row has-img" data-cert="cert2"><div><div class="c-name">مقدمه‌ای بر CRM با HubSpot <span class="view-hint">مشاهده مدرک ›</span></div><div class="c-org">Coursera Project Network</div></div><div class="c-year">۱۴۰۴</div></div>
+      <div class="cert-row"><div><div class="c-name">مدیریت ریسک سرمایه‌گذاری</div><div class="c-org">Coursera Project Network <span style="opacity:.6;">· Credential ID 6JB3DJJ8VH3Z</span></div></div><div class="c-year">۱۴۰۴</div></div>
+      <div class="cert-row"><div><div class="c-name">تحلیل کسب‌وکار و مدیریت فرآیند</div><div class="c-org">Coursera Project Network</div></div><div class="c-year">۱۴۰۴</div></div>
+      <div class="cert-row"><div><div class="c-name">Project Management: Creating the WBS</div><div class="c-org">Coursera</div></div><div class="c-year">—</div></div>
+      <div class="cert-row"><div><div class="c-name">Google Ads for Beginners</div><div class="c-org">Google</div></div><div class="c-year">—</div></div>
+      <div class="cert-row has-img" data-cert="cert1"><div><div class="c-name">کارگاه ارزیابی خسارت بیمه‌های درمان تکمیلی <span class="view-hint">مشاهده مدرک ›</span></div><div class="c-org">پژوهشکده بیمه</div></div><div class="c-year">۱۴۰۳</div></div>
+      <div class="cert-row has-img" data-cert="cert4"><div><div class="c-name">نقش اینشورتک در افزایش اعتماد به صنعت بیمه <span class="view-hint">مشاهده مدرک ›</span></div><div class="c-org">پژوهشکده بیمه</div></div><div class="c-year">۱۴۰۳</div></div>
+      <div class="cert-row"><div><div class="c-name">وبینار اعتمادسازی در صنعت بیمه</div><div class="c-org">پژوهشکده بیمه</div></div><div class="c-year">۱۴۰۳</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- بخش داوری و فعالیت‌های پژوهشی -->
+<section id="reviewing">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">داوری و فعالیت‌های پژوهشی</div>
+      <h2 class="title">در خدمت جامعه‌ی علمی</h2>
+    </div>
+
+    <div class="cards-2">
+      <!-- کارت پژوهش‌ها و مقالات (تمام عرض) -->
+      <div class="edu-card reveal" style="grid-column: 1 / -1; margin-top: 30px;">
+        <div class="edu-icon">
+          <svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px;">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          </svg>
+        </div>
+        <span class="status">پژوهش‌ها و مقالات</span>
+        <h3 style="margin-top:14px;">فعالیت‌های پژوهشی و تألیف</h3>
+        
+        <div class="paper-list">
+          <!-- پایان‌نامه -->
+          <div class="paper-title">
+            <span style="color:var(--copper-bright); font-weight:600; display:block; margin-bottom:4px;">پایان‌نامه کارشناسی ارشد (تحت حمایت پژوهشکده بیمه):</span>
+            Developing a Digital Marketing Model for Businesses in the Insurance Industry
+          </div>
+          <!-- مقاله ۱ -->
+          <div class="paper-title" dir="ltr">
+            Category-Specific Prediction of E-Commerce Purchase-Popularity Tiers: An Ordinal Classification Approach with a Precision-Weighted Partial Pooling Benchmark
+          </div>
+          <!-- مقاله ۲ -->
+          <div class="paper-title" dir="ltr">
+            Beyond Cross-Validation: Untouched-Holdout Evidence on Model Generalization in Small-Sample E-Commerce Popularity-Index Estimation
+          </div>
+        </div>
+      </div>
+
+      <!-- کارت داوری مقالات -->
+      <div class="edu-card reveal d1">
+        <div class="edu-icon">
+          <svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px;">
+            <path d="M9 11l3 3L22 4"/>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+        </div>
+        <span class="status">داوری مقالات</span>
+        <h3 style="margin-top:14px;">داوری ۲ مقاله علمی</h3>
+        <div class="org">
+          مجله Information Processing and Management
+          <b style="color:var(--muted); font-weight:400;">· Elsevier</b>
+        </div>
+        <p class="tl-desc" style="margin-top:12px;">
+          داوری دو مقاله علمی برای مجله‌ی بین‌المللی Information Processing and Management (انتشارات Elsevier).
+        </p>
+        <span class="tl-tag" style="margin-top:16px;">داور علمی</span>
+      </div>
+
+      <!-- کارت دوره الزیویر -->
+      <div class="edu-card reveal d2">
+        <div class="edu-icon">
+          <svg class="icon" viewBox="0 0 24 24" style="width:16px;height:16px;">
+            <path d="M12 20h9"/>
+            <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+          </svg>
+        </div>
+        <span class="status" style="background:var(--bg-panel-2); color:var(--copper-bright); border:1px solid var(--line-col);">دوره تخصصی</span>
+        <h3 style="margin-top:14px;">دوره‌ی داوری مجلات علمی</h3>
+        <div class="org">
+          Elsevier
+          <b style="color:var(--muted); font-weight:400;">· ۱۴۰۴</b>
+        </div>
+        <p class="tl-desc" style="margin-top:12px;">
+          گذراندن دوره‌ی تخصصی داوری مجلات علمی (Peer Review) با دریافت مدرک معتبر از انتشارات Elsevier.
+        </p>
+        <span class="tl-tag" style="margin-top:12px;">مدرک معتبر</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">مهارت‌ها</div>
+      <h2 class="title">ابزار کار و زبان‌های من</h2>
+    </div>
+    <div class="skill-cols">
+      <div class="reveal d1">
+        <div class="skill-bar-row">
+          <div class="sb-top"><span>ارزیابی خسارت و قوانین بیمه‌ی درمان</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="92"></div></div>
+        </div>
+        <div class="skill-bar-row">
+          <div class="sb-top"><span>مدیریت کسب‌وکار و فرآیند</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="86"></div></div>
+        </div>
+        <div class="skill-bar-row">
+          <div class="sb-top"><span>Microsoft office</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="88"></div></div>
+        </div>
+        <div class="skill-bar-row">
+          <div class="sb-top"><span>پایتون</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="85"></div></div>
+        </div>
+        <div class="skill-bar-row">
+          <div class="sb-top"><span>نرم‌افزار فن‌آوران (صدور بیمه‌نامه)</span></div>
+          <div class="sb-track"><div class="sb-fill" data-w="90"></div></div>
+        </div>
+
+        <div class="tagcloud" style="margin-top:36px;">
+          <span class="tag hi">تنبور — نوازنده‌ی حرفه‌ای</span>
+          <span class="tag hi">علاقه‌مند به کارهای پژوهشی</span>
+          <span class="tag">روابط عمومی بالا</span>
+          <span class="tag">تسلط نسبی بر شبکه و کامپیوتر و برنامه نویسی</span>
+          <span class="tag">مقدمات CRM</span>
+        </div>
+      </div>
+
+      <div class="reveal d2">
+        <div class="eyebrow" style="margin-bottom:24px;">زبان‌ها</div>
+        <div class="lang-row">
+          <span class="lname">کوردی</span>
+          <div class="sb-track"><div class="sb-fill" data-w="100"></div></div>
+          <span class="llabel">زبان مادری</span>
+        </div>
+        <div class="lang-row">
+          <span class="lname">انگلیسی</span>
+          <div class="sb-track"><div class="sb-fill" data-w="75"></div></div>
+          <span class="llabel">سطح کاری</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow" style="justify-content:center;">تماس</div>
+      <h2 class="title">بیایید صحبت کنیم</h2>
+      <p class="lead">برای همکاری، مشاوره در حوزه‌ی بیمه‌ی درمان، داوری مقالات علمی یا حتی یک شب موسیقی تنبور — در دسترسم.</p>
+      <a class="contact-email" href="mailto:amincheshmesfidi@gmail.com" dir="ltr">amincheshmesfidi@gmail.com</a>
+      <div class="contact-links">
+        <a class="btn btn-ghost btn-icon" href="https://www.linkedin.com/in/mohammadamin-cheshshme-sfidi" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M6.5 8.5v10M6.5 5.5v.01M11.5 18.5v-6c0-1.7 1.2-2.5 2.5-2.5 1.5 0 2.5 1 2.5 2.7v5.8"/></svg>
+          لینکدین
+        </a>
+        <a class="btn btn-ghost btn-icon" href="https://github.com/aminchashmesefid" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.4c0-1 .1-1.4-.5-2 2-.2 4.5-1 4.5-4.5 0-1-.4-1.8-1-2.5.1-.2.4-1.2-.1-2.5 0 0-.8-.3-2.8 1a9.5 9.5 0 0 0-5 0c-2-1.3-2.8-1-2.8-1-.5 1.3-.2 2.3-.1 2.5-.6.7-1 1.5-1 2.5 0 3.5 2.5 4.3 4.5 4.5-.3.3-.5.7-.5 1.4V19"/></svg>
+          نمونه‌کار (گیت‌هاب)
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="tanbur-mark">۞</div>
+  <div>محمد امین چشمه سفیدی — کرمانشاه، ایران</div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose">✕</div>
+  <img id="lightboxImg" src="" alt="مدرک">
+</div>
+
+<script>
+  const certImages = {
+    cert1: "assets/cert1.jpg",
+    cert2: "assets/cert2.jpg",
+    cert3: "assets/cert3.jpg",
+    cert4: "assets/cert4.jpg",
+    cert5: "assets/cert5.jpg",
+    cert6: "assets/cert6.jpg"
+  };
+  
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  
+  function openLightbox(key){
+    lightboxImg.src = certImages[key];
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  document.querySelectorAll('.cert-row.has-img').forEach(row=>{
+    row.addEventListener('click', (e)=>{
+      e.preventDefault();
+      openLightbox(row.dataset.cert);
+    });
+  });
+  
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    lightboxImg.src='';
+    document.body.style.overflow = '';
+  }
+  
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e)=>{ if(e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeLightbox(); });
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        if(e.target.querySelectorAll){
+          e.target.querySelectorAll('.sb-fill').forEach(bar=>{
+            bar.style.width = bar.dataset.w + '%';
+          });
+        }
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.18});
+  revealEls.forEach(el=>io.observe(el));
+
+  document.querySelectorAll('.in .sb-fill').forEach(b=>b.style.width=b.dataset.w+'%');
+
+  const sections = [...document.querySelectorAll('section, header.hero')];
+  const railDotsContainer = document.getElementById('railDots');
+  const progressLine = document.getElementById('stringProgress');
+
+  const dotDefs = [
+    {id:'hero', label:'ابتدا'},
+    {id:'about', label:'درباره من'},
+    {id:'experience', label:'تجربه'},
+    {id:'education', label:'تحصیلات'},
+    {id:'reviewing', label:'داوری و پژوهش'},
+    {id:'skills', label:'مهارت‌ها'},
+    {id:'contact', label:'تماس'},
+  ];
+
+  dotDefs.forEach(d=>{
+    const dot = document.createElement('div');
+    dot.className='rail-dot';
+    dot.dataset.target = d.id;
+    dot.innerHTML = '<span></span><label>'+d.label+'</label>';
+    dot.addEventListener('click', ()=>{
+      document.getElementById(d.id).scrollIntoView({behavior:'smooth'});
+    });
+    railDotsContainer.appendChild(dot);
+  });
+
+  function layoutDots(){
+    const railHeight = document.querySelector('.string-rail').clientHeight;
+    document.querySelectorAll('.rail-dot').forEach(dot=>{
+      const target = document.getElementById(dot.dataset.target);
+      const ratio = target.offsetTop / (document.documentElement.scrollHeight - target.offsetHeight);
+      const top = Math.min(Math.max(ratio,0),1) * (railHeight-15);
+      dot.style.top = top + 'px';
+    });
+  }
+
+  function updateRail(){
+    const scrollTop = window.scrollY;
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = Math.min(scrollTop/docH, 1);
+    const railHeight = document.querySelector('.string-rail').clientHeight;
+    progressLine.setAttribute('y2', (progress*railHeight)+'px');
+
+    let current = sections[0];
+    sections.forEach(s=>{
+      if(scrollTop + window.innerHeight*0.4 >= s.offsetTop) current = s;
+    });
+    document.querySelectorAll('.rail-dot').forEach(dot=>{
+      dot.classList.toggle('active', dot.dataset.target === current.id);
+    });
+  }
+
+  window.addEventListener('scroll', updateRail, {passive:true});
+  window.addEventListener('resize', ()=>{ layoutDots(); updateRail(); });
+  window.addEventListener('load', ()=>{ layoutDots(); updateRail(); });
+  setTimeout(()=>{ layoutDots(); updateRail(); }, 300);
+</script>
+</body>
+</html>
